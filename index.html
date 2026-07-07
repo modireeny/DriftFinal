@@ -1388,13 +1388,14 @@ Choose your language · Choisissez votre langue · अपनी भाषा च
     q1: p[10], q2a: p[11], q2b: p[12],
     q3a: p[13], q3b: p[14], q4: p[15]
   };
-
-  fetch(&#39;https://script.google.com/macros/s/AKfycbwyq0EP62dSukKIQgxk4G1pSVvL6xOX1LY7FD7Vz_hkQIYPDOuHySiIlkW75CSpzryL/exec&#39;, {
-    method: &#39;POST&#39;,
-    mode: &#39;no-cors&#39;,
-    headers: { &#39;Content-Type&#39;: &#39;text/plain&#39; },
-    body: JSON.stringify(payload)
-  });
+fetch('https://script.google.com/macros/s/AKfycbwyq0EP62dSukKIQgxk4G1pSVvL6xOX1LY7FD7Vz_hkQIYPDOuHySiIlkW75CSpzryL/exec', {
+  method: 'POST',
+  mode: 'no-cors',
+  headers: {
+    'Content-Type': 'text/plain'
+  },
+  body: JSON.stringify(payload)
+});
 })();
 &lt;/script&gt;](else:)[&lt;script&gt;sessionStorage.removeItem(&#39;vd_sid&#39;);&lt;/script&gt;]</tw-passagedata><tw-passagedata pid="54" name="FRIntro" tags="" position="2200,250" size="100,100"># LE SIMULATEUR DE DÉRIVE
 
