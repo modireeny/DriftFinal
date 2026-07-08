@@ -1366,8 +1366,8 @@ Choose your language · Choisissez votre langue · अपनी भाषा च
 (set: $log_on to false)
 (if: $team is 0)[(set: $team to &quot;&quot;)]
 </tw-passagedata><tw-passagedata pid="53" name="footer" tags="footer" position="1100,3750" size="100,100">
-(if: $log_on)[&lt;div id=&quot;vd-log&quot; style=&quot;display:none&quot;&gt;(print: (passage:)'s name)|||(print: $lang)|||(print: $team)|||(print: $quarter)|||(print: $trust)|||(print: $transparency)|||(print: $feedback)|||(print: $performance)|||(print: $budget)|||(print: $pressure)|||(print: $q1choice)|||(print: $q2_first)|||(print: $q2_second)|||(print: $q3_first)|||(print: $q3_second)|||(print: $q4choice)&lt;/div&gt;&lt;script&gt;(function(){
-  var el = document.getElementById(&#39;vd-log&#39;);
+(if: $log_on)[<div id="vd-log" style="display:none">(verbatim-print: (passage:)'s name)|||(verbatim-print: $lang)|||(verbatim-print: $team)|||(print: $quarter)|||(print: $trust)|||(print: $transparency)|||(print: $feedback)|||(print: $performance)|||(print: $budget)|||(print: $pressure)|||(verbatim-print: $q1choice)|||(verbatim-print: $q2_first)|||(verbatim-print: $q2_second)|||(verbatim-print: $q3_first)|||(verbatim-print: $q3_second)|||(verbatim-print: $q4choice)</div><script>(function(){
+  var el = document.getElementById('vd-log');
   if (!el) return;
   var p = el.textContent.split(&#39;|||&#39;);
 
